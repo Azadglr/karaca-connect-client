@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "karaca-connect-client"
+version = "0.1.0a1"
+description = "Unofficial asynchronous client for the Karaca Connect cloud API"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [{name = "AzadGLR"}]
+keywords = ["karaca", "home-assistant", "asyncio", "tea-maker"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Framework :: AsyncIO",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Operating System :: OS Independent",
+  "Topic :: Home Automation",
+]
+dependencies = ["aiohttp>=3.9,<4"]
+
+[project.urls]
+Homepage = "https://github.com/Azadglr/karaca-connect-client"
+Repository = "https://github.com/Azadglr/karaca-connect-client"
+Issues = "https://github.com/Azadglr/karaca-connect-client/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+karaca_connect_client = ["py.typed"]
